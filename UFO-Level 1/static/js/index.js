@@ -1,7 +1,8 @@
+
 // Grabbing a reference to the table body
 var tbody = d3.select("tbody");
 
-//Iterating through data and displaying it using arrow functions
+//Iterating through sitings data and displaying it using arrow functions
 data.forEach(sitingsReport => {
   var row = tbody.append("tr");
   Object.entries(sitingsReport).forEach(([key, value]) => {
@@ -10,53 +11,27 @@ data.forEach(sitingsReport => {
   });
 });
 
-var sitings = data;
+var sitings= data;
+var filterDate = "00/00/0000";
+var ipDate = "00/00/0000";
 
-// Select the button
-var button = d3.select("#button");
+// Get the button, and when the user clicks on it, execute myFunction
+document.getElementById("myButton").onclick  = function() {myFunction()};
 
-button.on("click", function() {
+/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
+function myFunction() {
+  var ipDate = document.getElementById("myInput").value;
+  var filterDate = ipDate.text
+}
 
-  // Select the input element and get the raw HTML node
-  var inputElement = d3.select("#example-form-input");
-
-  // Get the value property of the input element
-  var inputValue = inputElement.property("value");
-  //var inputValue = inputElement.text();
-
-  console.log(inputValue);
-
-  // Set the span tag in the h1 element to the text that was entered in the form
-  d3.select("h1>span").text(inputValue);
-
-  console.log(sitings);
-
-  var filteredData = sitings.filter(spot => spot.date === inputValue);
-  console.log(filteredData);
-
-  // BONUS: Calculate summary statistics for the age field of the filtered data
-
-  // First, create an array with just the age values
-  //var selected = filteredData.map(siting => siting.data);
-
-  // Next, use math.js to calculate the mean, median, mode, var, and std of the ages
-  //var mean = math.mean(ages);
-  //var median = math.median(ages);
-  //var mode = math.mode(ages);
-  //var variance = math.var(ages);
-  //var standardDeviation = math.std(ages);
-
-  // Then, select the unordered list element by class name
-  //var list = d3.select(".summary");
-
-  // remove any children from the list to
-  //list.html("");
-
-  // append stats to the list
-  //list.append("li").text(`Mean: ${mean}`);
-  //list.append("li").text(`Median: ${median}`);
-  //list.append("li").text(`Mode: ${mode}`);
-  //list.append("li").text(`Variance: ${variance}`);
-  //list.append("li").text(`Standard Deviation: ${standardDeviation}`);
+var filtered = sitings.filter(function (siting) {
+  return siting.datetime === filterDate;
 });
+
+console.log(ipDate)
+
+
+
+
+
 
