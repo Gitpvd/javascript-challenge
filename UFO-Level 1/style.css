@@ -6,7 +6,11 @@ body {
     background-size: cover;
   }
 
-  .h1{
-      background-color: coral
+.hero{
+    color: chocolate;
+}
+
+  .table-head {
+      color:chocolate;  
   }
 
