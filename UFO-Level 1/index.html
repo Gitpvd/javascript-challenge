@@ -6,8 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UFO Sitings</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/cyborg/bootstrap.min.css">
   <script src="https://d3js.org/d3.v5.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.0.0/math.min.js"></script>
   <link rel = "stylesheet" type = "text/css" href = "style.css" />
 </head>
 <body>
@@ -19,7 +20,7 @@
             <label for="example-form">Filter by Date</label>
             <input class="form-control" id="example-form-input" name="example-form" type="text">
           </div>
-          <button id="button" type="button" class="btn btn-default">GO!</button>
+          <button id="button" type="button" class="btn btn-info">Search Reports</button>
         </form>
       </div>
     </div>
@@ -28,6 +29,7 @@
         <h1>Reported Sitings:
           <span></span>
         </h1>
+        <ul class="summary"></ul>
       </div>
     </div>
   </div>
