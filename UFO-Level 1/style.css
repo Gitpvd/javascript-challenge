@@ -1,25 +1,8 @@
-body { 
-  background: url(https://cdn.mos.cms.futurecdn.net/JYCV34Zni5sjYoZdpR7rDR-1024-80.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 100;
-}
-
-.hero h1 {
-  color:chocolate;
-  margin-top: 200px;
-  font-size: 24px;
-}
-
-.hero p {
-  color:grey;
-  font-size: 16px;
-  font-style: italic;
-}
-
-.table-head{
-  color: chocolate;
-  font-size: 16px;
+table {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: 12px;
+    text-align: center;
+    border: solid;
+    overflow-wrap: normal;
 }
