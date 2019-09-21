@@ -13,22 +13,18 @@ data.forEach(sitingsReport => {
 
 var sitings= data;
 var filterDate = "00/00/0000";
-var ipDate = "00/00/0000";
+var button = d3.select("#myButton");
+var ipDate= d3.select("#myInput");
 
-// Get the button, and when the user clicks on it, execute myFunction
-document.getElementById("myButton").onclick  = function() {myFunction()};
-
-/* myFunction toggles between adding and removing the show class, which is used to hide and show the dropdown content */
-function myFunction() {
-  var ipDate = document.getElementById("myInput").value;
-  var filterDate = ipDate.text
-}
-
-var filtered = sitings.filter(function (siting) {
-  return siting.datetime === filterDate;
+button.on("click", function() {
+  console.log("Hi, a button was clicked!");
+  var x = document.getElementById("myInput").value;
+  document.getElementById("demo").innerHTML = x;
+  var filtered = sitings.filter(function (siting) {
+    return siting.datetime === x;
+  });
 });
 
-console.log(ipDate)
 
 
 
