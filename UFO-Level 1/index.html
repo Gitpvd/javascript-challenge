@@ -7,9 +7,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UFO Sitings</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
   <link rel = "stylesheet" type = "text/css" href = "style.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <form>
+          <div class="form-group">
+            <label for="example-form">Filter by Date</label>
+            <input class="form-control" id="example-form-input" name="example-form" type="text">
+          </div>
+          <button id="button" type="button" class="btn btn-default">GO!</button>
+        </form>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Reported Sitings:
+          <span></span>
+        </h1>
+      </div>
+    </div>
+  </div>
   <table border="1">
     <thead>
       <tr>
