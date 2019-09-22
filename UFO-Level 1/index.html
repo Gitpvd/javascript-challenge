@@ -12,16 +12,19 @@
   <link rel = "stylesheet" type = "text/css" href = "style.css" />
 </head>
 <body>
+  <div class="container-fluid" id="topBox">
+    <div class="jumbotron"></div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-            <h2 for="Searchbar">Filter by Date: </h2>
-            <input type="text" id="myInput" placeholder="DD/MM/YYYY" title="Filter by date">
-            <button id="myButton" class="btn btn-info">Search </button>
-            <p>Click the button to search for UFO sitings on: </p>
-            <p id="demo"></p>
+        <h2 for="Searchbar">Filter by Date: </h2>
+          <input type="text" id="myInput" placeholder="DD/MM/YYYY" title="Filter by date">
+          <button id="myButton" class="btn btn-info">Search </button>
+          <p>Click the button to search for UFO sitings on: </p>
+          <p id="demo"></p>
+        </div>
       </div>
-    <div class="row">
       <div class="col-md-12">
         <h1>Reported Sitings:
           <span></span>
@@ -29,21 +32,21 @@
         <ul class="summary"></ul>
       </div>
     </div>
+    <table id="myTable" border="1">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Country</th>
+          <th>Shape</th>
+          <th>Duration (Min)</th>
+          <th>Comments</th>
+        </tr>
+      </thead>
+      <tbody</tbody>
+    </table>
   </div>
-  <table id="myTable" border="1">
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Country</th>
-        <th>Shape</th>
-        <th>Duration (Min)</th>
-        <th>Comments</th>
-      </tr>
-    </thead>
-    <tbody</tbody>
-  </table>
 </body>
 <script src="static/js/data.js"></script>
 <script src="static/js/index.js"></script>

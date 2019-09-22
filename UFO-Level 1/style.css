@@ -1,4 +1,14 @@
 
+#topBox{
+  height: 250px; 
+}
+.jumbotron{
+  background-image: url('https://i.guim.co.uk/img/media/26b02e1ade06fad41b87e5ef02f65bafb719acda/0_274_4456_2673/master/4456.jpg?width=620&quality=45&auto=format&fit=max&dpr=2&s=b77706f07e3bf61cfcd0292fe5798642');
+  background-size: cover;
+  height: 250px;
+	background-repeat: no-repeat;
+}
+
 table {
     font-size: 12px;
     text-align: center;
