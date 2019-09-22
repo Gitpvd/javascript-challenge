@@ -2,10 +2,10 @@
 The above repository contains files for rendering a webpage that will display UFO sitings data and allow the user to filter that data by date. When a date is inputted and the user clicks the "Search" button, only the data matching the date filter criteria will display in the table below. The user may click the "Reset Search" button to once again view all the data. 
 
 Files included are as follows: 
-1. data.js - UFO sitings data 
-2. index.js - contains js and d3 code with logic to filter and display data
-3. style.css - contains css and bootstrap code to style the webpage in the "Cybord" bootstrap theme with some modifications
-4. index.html - contains html to structure the webpage and images, buttons, and tables displayed on it 
+1. data.js - UFO sitings data (UFO-Level 1/static/js)
+2. index.js - contains js and d3 code with logic to filter and display data (UFO-Level 1/static/js)
+3. style.css - contains css and bootstrap code to style the webpage in the "Cybord" bootstrap theme with some modifications (UFO-Level 1 folder)
+4. index.html - contains html to structure the webpage and images, buttons, and tables displayed on it (UFO-Level 1 folder)
 
 This meets the Level 1 criteria for the HW assignment as outlined below.
 
