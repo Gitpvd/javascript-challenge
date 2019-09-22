@@ -9,6 +9,17 @@ data.forEach(entry => {
     cell.text(value);
   });
 });
+var rbutton = d3.select("#resetButton");
+rbutton.on("click", function() {
+  document.getElementById("myTbody").innerHTML = "";
+  data.forEach(entry => {
+    var row = tbody.append("tr");
+    Object.entries(entry).forEach(([key, value]) => {
+      var cell = row.append("td");
+      cell.text(value);
+    });
+  });
+});
 
 var sitings= data;
 var button = d3.select("#myButton");
