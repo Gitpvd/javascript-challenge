@@ -29,9 +29,13 @@ table {
   width: 75%;
   margin: 0 auto !important;
 }
-table, th, td {
+table, th ,td {
     border: 1px solid black;
   }
+th{
+  color: blue;
+  text-align: center;
+}
 th,td {
     padding: 5px;
 }
